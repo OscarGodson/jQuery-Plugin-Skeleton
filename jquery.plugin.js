@@ -22,14 +22,13 @@
 */
 (function($){
 	$.fn.pluginname = function(options) {
-		var defaults = {
-			
-		};
 		return this.each(function() {
-			options = $.extend(true, defaults, options);
-			
+			options = $.extend(true, $.fn.pluginname.defaults, options);
+
 			$this = $(this);
-			
 		});
+	};
+
+	$.fn.pluginname.defaults = {
 	};
 })(jQuery);
