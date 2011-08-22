@@ -21,14 +21,15 @@
 	WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 ;(function($){
-	$.fn.pluginname = function(options) {
-		var settings = $.extend({}, $.fn.pluginname.defaultOptions, options);
+    $.fn.extend({
+        pluginname: function(options) {
+            this.defaultOptions = {'bar':'baz'};
 
-		return this.each(function() {
-			var $this = $(this);
-		});
-	};
+            var settings = $.extend({}, this.defaultOptions, options);
 
-	$.fn.pluginname.defaultOptions = {
-	};
+            return this.each(function() {
+                var $this = $(this);
+            });
+        }
+    });
 })(jQuery);
