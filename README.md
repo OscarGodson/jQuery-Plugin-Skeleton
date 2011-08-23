@@ -9,7 +9,7 @@ Only thing you really have to do is edit the MIT license on the first line:
 
 And then name your plugin by replacing "`pluginname`" here:
 
-    $.fn.pluginname = function(options) {
+    pluginname: function(options) {
 
 Lastly, you basically just start writing you plugin right under this line:
 
