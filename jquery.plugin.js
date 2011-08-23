@@ -23,7 +23,7 @@
 ;(function($){
     $.fn.extend({
         pluginname: function(options) {
-            this.defaultOptions = {'bar':'baz'};
+            this.defaultOptions = {};
 
             var settings = $.extend({}, this.defaultOptions, options);
 
