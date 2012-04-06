@@ -15,7 +15,7 @@ Lastly, you basically just start writing you plugin right under this line:
 
     $this = $(this);
 
-Make sure to use `$this` to reference the element selected from the plugin. Example, `$this` in this in this case:
+Make sure to use `$this` to reference the element selected from the plugin. Example, `$this` in this case:
 
     $('#myelement').pluginname();
 
